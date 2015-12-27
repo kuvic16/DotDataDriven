@@ -78,6 +78,7 @@
             <?php
         }
         ?>
+<!--        <h1><?php //echo $this->getAction()->getId(); ?></h1>-->
         <div class="container">
             <?php if ($this->getAction()->getId() != 'index' && isset($this->breadcrumbs)): ?>
                 <ol class="breadcrumb">
