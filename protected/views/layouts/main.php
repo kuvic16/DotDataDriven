@@ -71,8 +71,11 @@
             ?>
             <div class="jumbotron">
                 <div class="container">
-                    <h1>Hello, world!</h1>
-                    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+                    <h1>Hello, Data Scientists!</h1>
+                    <p>
+                        This is a right place for you to data analysis. You can upload your csv/excel file and mapping to google map for bird's eye analysis of your data.
+                        We arrange for you to D3 data analysis tools which will help you to trend analysis and many more. 
+                    </p>
                     <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
                 </div>
             </div>
