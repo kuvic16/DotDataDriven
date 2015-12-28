@@ -16,3 +16,8 @@ input.error, .error .form-control {
 .caption h3{
     text-align: center;
 }
+
+.grid-view .button-column {
+    text-align: center !important;
+    width: 80px !important;
+}
