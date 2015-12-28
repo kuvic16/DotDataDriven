@@ -29,11 +29,11 @@ class UserController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('*'),
+				'users'=>array('admin'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'users'=>array('admin'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
@@ -122,9 +122,13 @@ class UserController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('User');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+		$model=new User('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['User']))
+			$model->attributes=$_GET['User'];
+
+		$this->render('admin',array(
+			'model'=>$model,
 		));
 	}
 
