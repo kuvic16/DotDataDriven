@@ -9,9 +9,9 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>
+<h3>
     <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-    Update User</h1>
+    Update User</h3>
 <hr>
 
 <div class="row">

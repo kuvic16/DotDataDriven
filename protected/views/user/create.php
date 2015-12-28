@@ -8,9 +8,9 @@ $this->breadcrumbs = array(
 );
 ?>
 
-<h1>
+<h3>
     <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Create User
-</h1>
+</h3>
 <hr>
 
 <div class="row">
